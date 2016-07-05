@@ -271,7 +271,7 @@ angular.module('oi.select')
                     var optionGroup = scope.groups[getGroupName(option)] = scope.groups[getGroupName(option)] || [];
                     var modelOption = selectAsFn ? selectAs(option) : option;
 
-                    optionGroup.splice(optionGroup.indexOf(option), 1);
+                   //optionGroup.splice(optionGroup.indexOf(option), 1);
 
                     if (multiple) {
                         ctrl.$setViewValue(angular.isArray(ctrl.$modelValue) ? ctrl.$modelValue.concat(modelOption) : [modelOption]);
